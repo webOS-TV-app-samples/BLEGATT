@@ -1,16 +1,16 @@
 # BLE GATT
 
-The BLE GATT Luan API allows you to use webOS TV's BLE GATT client function.<br/>
+The BLE GATT Luan API allows you to use webOS TV's BLE GATT client function. <br/>
 This project is a sample app that uses BLE GATT Luna API.
 
 <br/>
 
 ## Description
 
-You can find out how to call the luna service API in this project and can check scan, connect, read/write/notify characteristic operation <br/>
+You can find out how to call the luna service API in this project and can check scan, connect, read/write/notify characteristic operation. <br/>
 This project visualized the BLE scan, connect read/write/notify characteristic operation from BLE GATT service in this following:
 
-- Show BLE scan results and request to connect target device <br/><br/>
+- Show BLE scan results and request to connect target device. <br/><br/>
   <img src="./webos-meta/blegatt_sample_app_1.png" alt="blegatt_sample_app_1" width="900px" /><br/><br/>
 - You can check the supported services, characteristics, and descriptors of the connected GATT server device. <br/><br/>
   <img src="./webos-meta/blegatt_sample_app_2.png" alt="blegatt_sample_app_2" width="900px" /><br/><br/>
@@ -22,7 +22,7 @@ This project visualized the BLE scan, connect read/write/notify characteristic o
 
 ## Requirements
 
-- webOS 24 latest version and higher
+- webOS 24 latest version and higher.
 
 <br/>
 
@@ -57,5 +57,4 @@ https://webostv.developer.lge.com/develop/references/ble-gatt
 ## Implementation Guide
 
 If you want to see implementation guide using BLE GATT Service API, please refer to this url. <br />
-The implementation guide is explained based on JavaScript. <br/>
 https://webostv.developer.lge.com/develop/guides/ble-gatt
