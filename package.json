@@ -1,0 +1,81 @@
+{
+	"name": "com.test.app.testblegatt",
+	"version": "1.0.3",
+	"description": "A general template for an Enact Sandstone application.",
+	"author": "",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "npm run pack -- --production --isomorphic --snapshot --locales=tv",
+		"clean": "enact clean",
+		"format": "prettier --write \"**/*.js?(x)\"",
+		"lint": "enact lint --strict",
+		"pack": "enact pack",
+		"pack:p": "npm run pack -- --production",
+		"serve": "enact serve",
+		"start": "npm run serve",
+		"test": "enact test",
+		"test:all": "npm test -- --coverage --verbose --silent",
+		"test:coverage": "npm test -- --coverage",
+		"test:watch": "npm test -- --watch"
+	},
+	"license": "UNLICENSED",
+	"private": true,
+	"repository": "",
+	"enact": {
+		"isomorphic": true,
+		"theme": "sandstone"
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx}",
+			"!src/index.js",
+			"!src/libs/log.js",
+			"!src/reducers/index.js"
+		]
+	},
+	"eslintConfig": {
+		"extends": "enact/strict"
+	},
+	"dependencies": {
+		"@enact/core": "^4.5.0",
+		"@enact/i18n": "^4.5.0",
+		"@enact/sandstone": "^2.5.0",
+		"@enact/spotlight": "^4.5.0",
+		"@enact/ui": "^4.5.0",
+		"@enact/webos": "^4.5.0",
+		"@reduxjs/toolkit": "^1.8.1",
+		"ilib": "^14.14.0",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-redux": "^8.0.1",
+		"redux": "^4.2.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1",
+		"eslint": "^7.32.0",
+		"eslint-config-enact-proxy": "^1.0.5",
+		"eslint-config-enact": "^2.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-babel": "^5.3.1",
+		"eslint-plugin-enact": "^0.2.3",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react": "^7.31.8",
+		"husky": "^4.3.8",
+		"jest-cucumber": "^3.0.1",
+		"lint-staged": "^12.4.0",
+		"redux-logger": "^3.0.6"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "npm run build && npm run test:all && lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.js": [
+			"npm run lint"
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"id": "com.test.app.testblegatt",
+	"title": "BLE GATT Test App",
+	"main": "index.html",
+	"icon": "icon.png",
+	"largeIcon": "icon_large.png",
+	"type": "web",
+	"vendor": "LGE",
+	"version": "1.0.3",
+	"appDescription": "BLE GATT Test App"
+}

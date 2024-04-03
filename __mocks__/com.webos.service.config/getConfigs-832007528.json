@@ -1,0 +1,7 @@
+{
+	"subscribed": false,
+	"configs": {
+		"com.webos.service.rollingscreen.supportScreenType": "none"
+	},
+	"returnValue": true
+}
