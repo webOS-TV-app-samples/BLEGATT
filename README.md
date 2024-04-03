@@ -7,13 +7,16 @@ This project is a sample app that uses BLE GATT Luna API.
 
 ## Description
 
-1. Clone this repository to your local.
-1. Remove `.git` from root directory.
-1. Initialize git with `git init`.
-1. Add origin to your remote `git remote add origin ${YOUR_APP_REPOSITORY}`.
-1. Modify codes.
+You can find out how to call the luna service API in this project and can check scan, connect, read/write/notify characteristic operation <br/>
+This project visualized the BLE scan, connect read/write/notify characteristic operation from BLE GATT service in this following:
 
-> If you want to use typescript version, you have to install typescript globally.
+- Show BLE scan results and request to connect target device <br/><br/>
+  <img src="./webos-meta/blegatt_sample_app_1.png" alt="blegatt_sample_app_1" width="900px" /><br/><br/>
+- You can check the supported services, characteristics, and descriptors of the connected GATT server device. <br/><br/>
+  <img src="./webos-meta/blegatt_sample_app_2.png" alt="blegatt_sample_app_2" width="900px" /><br/><br/>
+- You can set to receive notification from a specific characteristic, and you can read/write a specific characteristic. <br/><br/>
+  <img src="./webos-meta/blegatt_sample_app_3.png" alt="blegatt_sample_app_3" width="900px" /><br/><br/>
+  <img src="./webos-meta/blegatt_sample_app_4.png" alt="blegatt_sample_app_4" width="900px" /><br/>
 
 <br/>
 
