@@ -1,8 +1,11 @@
-# Enact Template
+# BLE GATT
 
-Enact system application template for new developers
+The BLE GATT Luan API allows you to use webOS TV's BLE GATT client function.
+This project is a sample app that uses BLE GATT Luna API.
 
-## How to use
+<br/>
+
+## Description
 
 1. Clone this repository to your local.
 1. Remove `.git` from root directory.
@@ -12,26 +15,44 @@ Enact system application template for new developers
 
 > If you want to use typescript version, you have to install typescript globally.
 
-## How to update
+<br/>
 
-### What can we discuss?
+## Requirements
 
-- Structure of directories
-- Adds or removes node modules
-  - Is prettier needed to format?
-  - Is reduxjs/toolkit needed?
-  - Do we need to use cucumber for test?
-- What is the best practice of using redux, hooks or states?
-- Good codes to be added
-- Bad codes to be removed
-- And so on
+- webOS 24 latest version and higher
 
-### How do we discuss?
+<br/>
 
-Please make issues and let's talk.
+## How to Use the Samples
 
-## Others
+### Clone the Repository
 
-### How to lint in VS Code
+Clone the repository and cd into the cloned directory.
 
-You need to install eslint globally. Please refer [this page](https://github.com/enactjs/eslint-config-enact/blob/master/docs/index.md).
+```
+git clone https://github.com/webOS-TV-app-samples/BLEGATT.git
+cd BLEGATT
+```
+
+### App Package & Install
+
+Package this project and install it on TV. <br/>
+
+https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-package <br/>
+https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-setup-device <br/>
+https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-install
+
+<br/>
+
+## Luna Service API - BLE GATT Service
+
+If you want to see details about the BLE GATT Service API, please refer to this url. <br />
+https://webostv.developer.lge.com/develop/references/ble-gatt
+
+<br/>
+
+## Implementation Guide
+
+If you want to see implementation guide using BLE GATT Service API, please refer to this url. <br />
+The implementation guide is explained based on JavaScript. <br/>
+https://webostv.developer.lge.com/develop/guides/ble-gatt
