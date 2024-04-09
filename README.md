@@ -8,6 +8,12 @@ This project is a sample app that uses BLE GATT Luna API.
 ## Description
 
 You can find out how to call the luna service API in this project and can check scan, connect, read/write/notify characteristic operation. <br/>
+To use the BLE GATT API, your app should acquire user permission. <br/>
+If the app calls the API without the permission, a pop up to get user permission will appear, and only after the user choose to give the permission, the app can use the BLE GATT API. <br/>
+Once acquired, the permission of the app remains valid until the user deletes it and no pop up for getting permission will appear till then. <br/>
+If the user explicitly deletes the permission, the app cannot use the BLE GATT API, and only after the user gives the permission again, it can use the API again. <br/>
+Add/delete permissions can be changed in the nearby devices menu in the Settings app. <br/>
+
 This project visualized the BLE scan, connect read/write/notify characteristic operation from BLE GATT service in this following:
 
 - Show BLE scan results and request to connect target device. <br/><br/>
