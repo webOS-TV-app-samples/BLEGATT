@@ -39,22 +39,34 @@ cd BLEGATT
 
 ### App Package & Install
 
-Package this project and install it on TV. <br/>
+enact app build. <br/>
+https://enactjs.com/docs/developer-tools/cli/building-apps/#packaging-source-code <br/>
 
+ares package and install on TV
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-package <br/>
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-setup-device <br/>
-https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-install
+https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-install <br/>
+
+```
+1. enact app build
+npm install
+npm run pack -- --production --isomorphic --locales=tv
+
+2. ares packaing & install
+ares-package -no-minify dist
+ares-install com.test.app.testblegatt_1.0.3_all.ipk
+```
 
 <br/>
 
 ## Luna Service API - BLE GATT Service
 
-If you want to see details about the BLE GATT Service API, please refer to this url. <br />
+If you want to see details about the BLE GATT Service API, please refer to this url. <br/>
 https://webostv.developer.lge.com/develop/references/ble-gatt
 
 <br/>
 
 ## Implementation Guide
 
-If you want to see implementation guide using BLE GATT Service API, please refer to this url. <br />
+If you want to see implementation guide using BLE GATT Service API, please refer to this url. <br/>
 https://webostv.developer.lge.com/develop/guides/ble-gatt
