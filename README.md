@@ -42,7 +42,7 @@ cd BLEGATT
 enact app build. <br/>
 https://enactjs.com/docs/developer-tools/cli/building-apps/#packaging-source-code <br/>
 
-ares package and install on TV
+ares package and install on TV. <br/>
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-package <br/>
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-setup-device <br/>
 https://webostv.developer.lge.com/develop/tools/cli-dev-guide#ares-install <br/>
