@@ -1,6 +1,6 @@
 # BLE GATT
 
-The BLE GATT Luan API allows you to use webOS TV's BLE GATT client function. <br/>
+The BLE GATT Luna API allows you to use webOS TV's BLE GATT client function. <br/>
 This project is a sample app that uses BLE GATT Luna API.
 
 <br/>
